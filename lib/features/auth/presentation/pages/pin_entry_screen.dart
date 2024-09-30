@@ -1,4 +1,4 @@
-import 'package:cash_mate/features/auth/presentation/widgets/avatar.dart';
+import 'package:cash_mate/widgets/avatar.dart';
 import 'package:cash_mate/features/auth/presentation/widgets/circle_fill.dart';
 import 'package:cash_mate/features/auth/presentation/widgets/numpad.dart';
 import 'package:flutter/material.dart';
@@ -16,10 +16,10 @@ class PinEntryScreen extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         SizedBox(
-          height: 80,
+          height: 70,
           width: MediaQuery.of(context).size.width,
         ),
-        const Avatar(),
+        Avatar(borderWidth: 116, outerCircleWidth: 110, innerCircleWidth: 100,),
         const SizedBox(height: 20),
         Text(
           'Welcome back, $name!',
@@ -29,7 +29,7 @@ class PinEntryScreen extends StatelessWidget {
               color: Color(0xff1E5368),
               fontWeight: FontWeight.w500),
         ),
-        const SizedBox(height: 40),
+        const SizedBox(height: 35),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -42,10 +42,10 @@ class PinEntryScreen extends StatelessWidget {
             CircleFill(),
           ],
         ),
-        const SizedBox(height: 40),
+        const SizedBox(height: 35),
         Numpad(),
         const SizedBox(
-          height: 40,
+          height: 35
         ),
         Text(
           'Forgot Pin',

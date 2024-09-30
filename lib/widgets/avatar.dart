@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class Avatar extends StatelessWidget {
-  final double borderWidth = 116.0;
-  final double outerCircleWidth = 110.0;
-  final double innerCircleWidth = 100.0;
-  const Avatar({
+  double borderWidth = 116.0;
+  double outerCircleWidth = 110.0;
+  double innerCircleWidth = 100.0;
+
+  Avatar({
     super.key,
+    required this.borderWidth,
+    required this.innerCircleWidth,
+    required this.outerCircleWidth,
   });
 
   @override
